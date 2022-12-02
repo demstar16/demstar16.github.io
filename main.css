@@ -86,6 +86,7 @@ body {
     padding: 10px;
     font-weight: 700;
     letter-spacing: 2px;
+    text-align: center;
 }
 
 #projects a {
@@ -121,7 +122,7 @@ body {
     margin-bottom: 30px;
     border: 2px solid var(--lightgreen);
     border-radius: 10px;
-    background-color: lightblue;
+    background-color: rgb(0, 63, 83);
 }
 
 .project-box:hover {
@@ -131,6 +132,7 @@ body {
 }
 
 .project-box img {
+    margin-top: 15px;
     max-width: 260px;
     max-height: 260px;
 }
@@ -146,16 +148,16 @@ body {
 .project-box-info h2 {
     margin-top: 20px;
     margin-bottom: 5px;
-    color: var(--green);
+    color: #00ff9f;
     font-family: monospace;
 }
 
 .project-box-info p {
     margin: 0;
-    color: var(--darkgreen);
+    color: var(--lightgreen);
     font-family: sans-serif;
     font-size: 14px;
-    margin-bottom: 5px;
+    margin-bottom: 20px;
 }
 
 .tools-title h1 {
