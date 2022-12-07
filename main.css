@@ -42,16 +42,6 @@ section {
   margin: 0 auto;
 }
 
-/* .page {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
-} */
-
 .navigation a {
   text-decoration: none;
   color: var(--green);
@@ -70,7 +60,17 @@ section {
 }
 
 #welcome h1,
-#projects h1,
+#projects h1 {
+  color: var(--lightgreen);
+  font-size: 50px;
+  font-family: sans-serif;
+  letter-spacing: 9px;
+  margin: 0;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
 #socials h1 {
   color: var(--lightgreen);
   font-size: 50px;
@@ -220,12 +220,12 @@ section {
   flex-direction: column;
   justify-content: space-around;
   background-color: #07defa;
-  height: 600px;
   border-radius: 40px;
-  padding: 1px 60px 1px 60px;
+  padding: 160px 60px 10px 60px;
   border: 10px dashed #053d27;
   margin-bottom: 50px;
 }
+
 
 .floating-icons {
   display: flex;
@@ -299,7 +299,7 @@ section {
 }
 
 .contact-title h1 {
-  margin:0;
+  margin: 0;
 }
 
 .contact-form {
@@ -425,11 +425,11 @@ form {
   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
   z-index: 1; /* Stay on top */
   top: 300px;
-  left: -40px;
+  left: -150px;
   overflow-x: hidden; /* Disable horizontal scroll */
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1050px) {
   .floating-icon1 img,
   .floating-icon2 img,
   .floating-icon3 img,
@@ -456,18 +456,7 @@ form {
   .floating-icon4 {
     animation: float1 900ms infinite alternate-reverse;
   }
-}
 
-@media (max-width: 540px) {
-  .floating-icon1 img,
-  .floating-icon2 img,
-  .floating-icon3 img,
-  .floating-icon4 img {
-    max-width: 80px;
-  }
-}
-
-@media (max-width: 1000px) {
   section {
     max-width: 600px;
     font-size: 14px;
@@ -494,23 +483,23 @@ form {
     width: 155px;
     height: 155px;
   }
-  
+
   .project-box img {
     margin-top: 5px;
     max-width: 140px;
     max-height: 140px;
   }
-  
+
   .project-box-info {
     margin-left: 10px;
     margin-right: 10px;
   }
-  
+
   .project-box-info h2 {
     margin-top: 10px;
     margin-bottom: 5px;
   }
-  
+
   .project-box-info p {
     font-size: 10px;
     margin-bottom: 10px;
@@ -540,10 +529,125 @@ form {
     font-size: 30px;
   }
 
+  .social-box {
+    padding-top: 15px;
+  }
+
   .astronaut,
   .alien,
   .sidebar {
     display: none;
+  }
+}
+
+@media (max-width: 540px) {
+  section {
+    max-width: 450px;
+    font-size: 11px;
+  }
+
+  .icons {
+    max-width: 250px;
+    padding: 0;
+    justify-content: space-around;
+  }
+
+  .icons img {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    width: 45px;
+  }
+
+  .project-box {
+    width: 150px;
+    height: 150px;
+  }
+
+  .project-box:hover {
+    width: 155px;
+    height: 155px;
+  }
+
+  .project-box img {
+    margin-top: 5px;
+    max-width: 140px;
+    max-height: 140px;
+  }
+
+  .project-box-info {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .project-box-info h2 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+
+  .project-box-info p {
+    font-size: 10px;
+    margin-bottom: 10px;
+  }
+
+  #welcome,
+  #projects,
+  #tools,
+  #socials,
+  #contact {
+    height: 100vh;
+  }
+
+  #welcome img {
+    max-width: 450px;
+  }
+
+  #welcome p {
+    font-size: 15px;
+  }
+
+  #welcome h1,
+  #projects h1,
+  #tools h1,
+  #socials h1,
+  #contact h1 {
+    font-size: 19px;
+  }
+
+  #socials h3 {
+    font-size: 12px;
+  }
+
+  .astronaut,
+  .alien,
+  .sidebar {
+    display: none;
+  }
+
+  .floating-icon1 img,
+  .floating-icon2 img,
+  .floating-icon3 img,
+  .floating-icon4 img {
+    max-width: 60px;
+  }
+  
+  .floating-icons p {
+    font-size: 15px;
+  }
+  
+  .floating-icon1 {
+    animation: float1 1400ms infinite alternate-reverse;
+  }
+  
+  .floating-icon2 {
+    animation: float1 1200ms infinite alternate-reverse;
+  }
+  
+  .floating-icon3 {
+    animation: float1 1000ms infinite alternate-reverse;
+  }
+  
+  .floating-icon4 {
+    animation: float1 900ms infinite alternate-reverse;
   }
 }
 
