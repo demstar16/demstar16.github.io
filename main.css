@@ -152,9 +152,8 @@ section {
 }
 
 .project-box:hover {
-  width: 305px;
-  height: 305px;
   border: 3px solid white;
+  opacity: 0.9;
 }
 
 .project-box img {
@@ -210,7 +209,7 @@ section {
   margin-right: 40px;
   margin-left: 40px;
   margin-bottom: 50px;
-  width: 80px;
+  width: 90px;
 }
 
 .social-box {
@@ -295,6 +294,7 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   margin-bottom: 50px;
 }
 
@@ -303,7 +303,7 @@ section {
 }
 
 .contact-form {
-  padding: 30px;
+  padding: 50px 200px;
   background-color: var(--lightgreen);
   border: 10px solid var(--purple);
   border-radius: 60px;
@@ -429,7 +429,7 @@ form {
   overflow-x: hidden; /* Disable horizontal scroll */
 }
 
-@media (max-width: 1050px) {
+@media (max-width: 1000px) {
   .floating-icon1 img,
   .floating-icon2 img,
   .floating-icon3 img,
@@ -475,19 +475,14 @@ form {
   }
 
   .project-box {
-    width: 200px;
-    height: 200px;
-  }
-
-  .project-box:hover {
-    width: 155px;
-    height: 155px;
+    width: 220px;
+    height: 220px;
   }
 
   .project-box img {
     margin-top: 5px;
-    max-width: 140px;
-    max-height: 140px;
+    max-width: 180px;
+    max-height: 160px;
   }
 
   .project-box-info {
@@ -498,6 +493,7 @@ form {
   .project-box-info h2 {
     margin-top: 10px;
     margin-bottom: 5px;
+    font-size: 17px;
   }
 
   .project-box-info p {
@@ -514,11 +510,12 @@ form {
   }
 
   #welcome img {
-    max-width: 400px;
+    max-width: 500px;
   }
 
   #welcome p {
     font-size: 15px;
+    padding: 10px 30px;
   }
 
   #welcome h1,
@@ -533,10 +530,18 @@ form {
     padding-top: 15px;
   }
 
+  .contact-form {
+    padding: 30px;
+  }
+
   .astronaut,
   .alien,
   .sidebar {
     display: none;
+  }
+
+  .navigation a {
+    font-size: 20px;
   }
 }
 
@@ -559,19 +564,14 @@ form {
   }
 
   .project-box {
-    width: 150px;
-    height: 150px;
-  }
-
-  .project-box:hover {
-    width: 155px;
-    height: 155px;
+    width: 180px;
+    height: 180px;
   }
 
   .project-box img {
     margin-top: 5px;
-    max-width: 140px;
-    max-height: 140px;
+    max-width: 100px;
+    max-height: 100px;
   }
 
   .project-box-info {
@@ -602,7 +602,8 @@ form {
   }
 
   #welcome p {
-    font-size: 15px;
+    font-size: 11px;
+    padding: 10px 40px;
   }
 
   #welcome h1,
@@ -610,11 +611,16 @@ form {
   #tools h1,
   #socials h1,
   #contact h1 {
-    font-size: 19px;
+    font-size: 24px;
+    letter-spacing: 5px;
+    margin-left: 10px;
   }
 
-  #socials h3 {
+
+  #tools h3,
+  #contact h3 {
     font-size: 12px;
+    margin-left: 10px;
   }
 
   .astronaut,
@@ -648,6 +654,21 @@ form {
   
   .floating-icon4 {
     animation: float1 900ms infinite alternate-reverse;
+  }
+
+  .contact-form {
+    width: fit-content;
+  }
+   
+  #contact input,
+  #contact textarea,
+  #contact button {
+    font-size: 15px;
+  }
+
+  .navigation a {
+    font-size: 14px;
+    letter-spacing: 1px;
   }
 }
 
