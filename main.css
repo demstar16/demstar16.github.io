@@ -730,12 +730,20 @@ form {
     font-size: 24px;
     letter-spacing: 5px;
     margin-left: 10px;
+    margin-bottom: 10px;
   }
 
   #tools h3,
   #contact h3 {
     font-size: 12px;
     margin-left: 10px;
+    margin-bottom: 10px;
+  }
+
+  .contact-main,
+  .social-box,
+  .icons {
+    margin-bottom: 10px;
   }
 
   .astronaut,
