@@ -620,6 +620,19 @@ form {
   #contact h1,
   #tutoring h1 {
     font-size: 28px;
+    margin-bottom: 15px;
+  }
+  
+  #tools h3,
+  #contact h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+
+  .contact-main,
+  .social-box,
+  .icons {
+    margin-bottom: 10px;
   }
 
   .social-box {
