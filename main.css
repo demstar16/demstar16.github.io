@@ -28,10 +28,17 @@ section {
   margin-bottom: 30px;
 }
 
+hr {
+  width: 40%;
+  margin-bottom: 10px;
+  opacity: 0.3;
+}
+
 #welcome,
 #projects,
 #tools,
 #socials,
+#tutoring,
 #contact {
   height: 100vh;
   display: flex;
@@ -91,7 +98,8 @@ section {
   text-align: left;
 }
 
-#tools h1 {
+#tools h1,
+#tutoring h1 {
   color: var(--lightgreen);
   font-size: 50px;
   font-family: sans-serif;
@@ -135,6 +143,94 @@ section {
   flex-wrap: wrap;
   justify-content: center;
 }
+
+.tutor-info h2 {
+  color: var(--green);
+  font-size: 30px;
+  font-family: sans-serif;
+  letter-spacing: 5px;
+  margin: 20px 0 10px 20px;
+}
+
+#tutoring p {
+  max-width: 60%;
+  font-size: 18px;
+  color: white;
+  font-family: monospace;
+  margin-bottom: 30px;
+}
+
+#tutoring a {
+  text-decoration: none;
+  color: var(--lightgreen);
+  font-weight: 700;
+}
+
+#tutoring a:hover {
+  font-size: 19px;
+  transition: 0.1s linear;
+}
+
+#tutoring .navigation a {
+  text-decoration: none;
+  color: var(--green);
+  font-size: 25px;
+  font-family: monospace;
+  letter-spacing: 10px;
+  padding: 15px;
+}
+
+#tutoring .navigation a:hover {
+  color: var(--darkgreen);
+  background-color: var(--lightgreen);
+  border: 2px solid var(--darkgreen);
+  border-radius: 20px;
+  font-weight: 700;
+}
+
+
+.tutor-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.pricing {
+  color: white;
+  font-family: monospace;
+  font-size: 14px;
+  border: 2px solid var(--lightgreen);
+  border-radius: 30px;
+  margin-right: 60px;
+  padding: 5px 20px 5px 0;
+}
+
+.why-me {
+  color: white;
+  font-family: monospace;
+  font-size: 14px;
+  border: 2px solid var(--lightgreen);
+  border-radius: 30px;
+  padding: 5px 20px 5px 0;
+}
+
+.target-audience {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.target-audience h2 {
+  color: var(--lightgreen);
+  font-family: sans-serif;
+  letter-spacing: 6px;
+  font-size: 40px;
+  margin: 0;
+}
+
+
 
 .project-box {
   width: 300px;
@@ -566,6 +662,8 @@ form {
   .project-box {
     width: 180px;
     height: 180px;
+    margin-left: 10px;
+  margin-bottom: 10px;
   }
 
   .project-box img {
