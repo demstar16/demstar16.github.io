@@ -40,21 +40,6 @@ hr {
   opacity: 0.7;
 }
 
-#welcome,
-#projects,
-#tools,
-#socials,
-#tutoring,
-#contact {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
 .navigation a {
   text-decoration: none;
   color: var(--green);
@@ -72,6 +57,23 @@ hr {
   font-weight: 700;
 }
 
+/* ---------------------- Page Sections ------------------------*/
+#welcome,
+#projects,
+#tools,
+#socials,
+#tutoring,
+#contact {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* -------------------- Section Headers (h1)---------------------------- */
 #welcome h1,
 #projects h1 {
   color: var(--lightgreen);
@@ -114,6 +116,17 @@ hr {
   text-align: center;
 }
 
+/* ---------------------- Subheadings (h3) ------------------------------*/
+#tools h3,
+#contact h3 {
+  color: var(--lightgreen);
+  font-size: 25px;
+  font-family: monospace;
+  color: var(--green);
+  margin-bottom: 40px;
+}
+
+/* ------------------------- Welcome Section Specific ---------------------------------- */
 #welcome img {
   max-width: 900px;
   border: 2px solid white;
@@ -129,17 +142,10 @@ hr {
   text-align: center;
 }
 
+/* ------------------ Project Section Specific -------------------------*/
+
 #projects a {
   text-decoration: none;
-}
-
-#tools h3,
-#contact h3 {
-  color: var(--lightgreen);
-  font-size: 25px;
-  font-family: monospace;
-  color: var(--green);
-  margin-bottom: 40px;
 }
 
 .project-boxes {
@@ -149,6 +155,165 @@ hr {
   flex-wrap: wrap;
   justify-content: center;
 }
+
+.project-box {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  transition: width 0.3s, height 0.3s;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  border: 2px solid var(--lightgreen);
+  border-radius: 10px;
+  background-color: rgb(0, 63, 83);
+}
+
+.project-box:hover {
+  border: 3px solid white;
+  opacity: 0.9;
+}
+
+.project-box img {
+  margin-top: 15px;
+  max-width: 260px;
+  max-height: 260px;
+}
+
+.project-box-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.project-box-info h2 {
+  margin-top: 20px;
+  margin-bottom: 5px;
+  color: #00ff9f;
+  font-family: monospace;
+}
+
+.project-box-info p {
+  margin: 0;
+  color: var(--lightgreen);
+  font-family: sans-serif;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+/* ------------------------ Tools Section Specific -----------------------------*/
+
+.tools-title h1 {
+  margin-bottom: 0;
+}
+
+.tools-title h3 {
+  margin: 0;
+}
+
+.icons {
+  max-width: 900px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: var(--darkgreen);
+  padding: 20px;
+  border-radius: 20px;
+  border: 2px solid var(--lightgreen);
+  margin-bottom: 50px;
+}
+
+.icons img {
+  margin-right: 40px;
+  margin-left: 40px;
+  margin-bottom: 50px;
+  width: 90px;
+}
+
+/* ---------------------------- Socials Section Specific -------------------------------*/
+
+.social-box {
+  max-width: auto;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #07defa;
+  border-radius: 40px;
+  padding: 160px 60px 10px 60px;
+  border: 10px dashed #053d27;
+  margin-bottom: 50px;
+}
+
+.floating-icons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.floating-icon1 {
+  margin-left: 50px;
+  margin-right: 50px;
+  animation: bigFloat 1400ms infinite alternate-reverse;
+  transition: all 200ms;
+}
+
+.floating-icon2 {
+  margin-left: 50px;
+  margin-right: 50px;
+  animation: bigFloat 1200ms infinite alternate-reverse;
+  transition: all 200ms;
+}
+
+.floating-icon3 {
+  margin-left: 50px;
+  margin-right: 50px;
+  animation: bigFloat 1000ms infinite alternate-reverse;
+  transition: all 200ms;
+}
+
+.floating-icon4 {
+  margin-left: 50px;
+  margin-right: 50px;
+  animation: bigFloat 900ms infinite alternate-reverse;
+  transition: all 200ms;
+}
+
+.floating-icon1 img,
+.floating-icon2 img,
+.floating-icon3 img,
+.floating-icon4 img {
+  max-width: 140px;
+}
+
+.floating-icon1:hover,
+.floating-icon2:hover,
+.floating-icon3:hover,
+.floating-icon4:hover {
+  opacity: 0.5;
+}
+
+.floating-icons a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+}
+
+.floating-icons p {
+  margin-top: 25px;
+  font-size: 40px;
+  color: var(--darkgreen);
+  font-family: monospace;
+  font-weight: 700;
+  text-shadow: 0 0 3px #00076f, 0 0 5px #139d68;
+}
+
+/* --------------------------- Tutor Section Specific ----------------------------- */
 
 .tutor-info h2 {
   color: var(--lightgreen);
@@ -232,158 +397,7 @@ hr {
   margin: 0;
 }
 
-.project-box {
-  width: 300px;
-  height: 300px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  transition: width 0.3s, height 0.3s;
-  margin-left: 30px;
-  margin-bottom: 30px;
-  border: 2px solid var(--lightgreen);
-  border-radius: 10px;
-  background-color: rgb(0, 63, 83);
-}
-
-.project-box:hover {
-  border: 3px solid white;
-  opacity: 0.9;
-}
-
-.project-box img {
-  margin-top: 15px;
-  max-width: 260px;
-  max-height: 260px;
-}
-
-.project-box-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: left;
-  margin-left: 20px;
-  margin-right: 20px;
-}
-
-.project-box-info h2 {
-  margin-top: 20px;
-  margin-bottom: 5px;
-  color: #00ff9f;
-  font-family: monospace;
-}
-
-.project-box-info p {
-  margin: 0;
-  color: var(--lightgreen);
-  font-family: sans-serif;
-  font-size: 14px;
-  margin-bottom: 20px;
-}
-
-.tools-title h1 {
-  margin-bottom: 0;
-}
-
-.tools-title h3 {
-  margin: 0;
-}
-
-.icons {
-  max-width: 900px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  background-color: var(--darkgreen);
-  padding: 20px;
-  border-radius: 20px;
-  border: 2px solid var(--lightgreen);
-  margin-bottom: 50px;
-}
-
-.icons img {
-  margin-right: 40px;
-  margin-left: 40px;
-  margin-bottom: 50px;
-  width: 90px;
-}
-
-.social-box {
-  max-width: auto;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  background-color: #07defa;
-  border-radius: 40px;
-  padding: 160px 60px 10px 60px;
-  border: 10px dashed #053d27;
-  margin-bottom: 50px;
-}
-
-.floating-icons {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.floating-icon1 {
-  margin-left: 50px;
-  margin-right: 50px;
-  animation: float 1400ms infinite alternate-reverse;
-  transition: all 200ms;
-}
-
-.floating-icon2 {
-  margin-left: 50px;
-  margin-right: 50px;
-  animation: float 1200ms infinite alternate-reverse;
-  transition: all 200ms;
-}
-
-.floating-icon3 {
-  margin-left: 50px;
-  margin-right: 50px;
-  animation: float 1000ms infinite alternate-reverse;
-  transition: all 200ms;
-}
-
-.floating-icon4 {
-  margin-left: 50px;
-  margin-right: 50px;
-  animation: float 900ms infinite alternate-reverse;
-  transition: all 200ms;
-}
-
-.floating-icon1 img,
-.floating-icon2 img,
-.floating-icon3 img,
-.floating-icon4 img {
-  max-width: 140px;
-}
-
-.floating-icon1:hover,
-.floating-icon2:hover,
-.floating-icon3:hover,
-.floating-icon4:hover {
-  opacity: 0.5;
-}
-
-.floating-icons a {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-decoration: none;
-}
-
-.floating-icons p {
-  margin-top: 25px;
-  font-size: 40px;
-  color: var(--darkgreen);
-  font-family: monospace;
-  font-weight: 700;
-  text-shadow: 0 0 3px #00076f, 0 0 5px #139d68;
-}
+/* --------------------------- Contact Section Specific -----------------------------*/
 
 .contact-main {
   display: flex;
@@ -418,7 +432,7 @@ form {
   border: 4px solid var(--purple);
   border-radius: 5px;
 }
-
+/* ---------------- Buttons ----------------------- */
 #contact button,
 .thankyou button {
   font-size: 20px;
@@ -435,6 +449,8 @@ form {
   letter-spacing: 2px;
   opacity: 0.6;
 }
+
+/* ------------------------ Thank You Section Specific --------------------------- */
 
 .thankyou {
   background-color: var(--darkgreen);
@@ -473,6 +489,8 @@ form {
   justify-content: center;
 }
 
+/* ----------------------- Sidebar Section ---------------------------------*/
+
 .sidebar {
   height: auto; /* Full-height: remove this if you want "auto" height */
   width: 160px; /* Set the width of the sidebar */
@@ -503,10 +521,12 @@ form {
   color: #f1f1f1;
 }
 
+/* --------------------- Gifs Section ----------------------- */
+
 .alien {
-  height: auto; /* Full-height: remove this if you want "auto" height */
-  width: 160px; /* Set the width of the sidebar */
-  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  height: auto;
+  width: 160px;
+  position: fixed; /* Fixed image */
   z-index: 1; /* Stay on top */
   top: 100px;
   right: 40px;
@@ -514,60 +534,64 @@ form {
 }
 
 .astronaut {
-  height: auto; /* Full-height: remove this if you want "auto" height */
-  max-width: 500px; /* Set the width of the sidebar */
+  height: auto;
+  max-width: 500px;
   scale: 60%;
-  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  position: fixed; /* Fixed image */
   z-index: 1; /* Stay on top */
   top: 300px;
   left: -150px;
   overflow-x: hidden; /* Disable horizontal scroll */
 }
 
+/* -------------------------------- Laptop Screen Size ---------------------------------- */
+
 @media (max-width: 1000px) {
-  .floating-icon1 img,
-  .floating-icon2 img,
-  .floating-icon3 img,
-  .floating-icon4 img {
-    max-width: 100px;
-  }
-
-  .floating-icons p {
-    font-size: 20px;
-  }
-
-  .floating-icon1 {
-    animation: float1 1400ms infinite alternate-reverse;
-  }
-
-  .floating-icon2 {
-    animation: float1 1200ms infinite alternate-reverse;
-  }
-
-  .floating-icon3 {
-    animation: float1 1000ms infinite alternate-reverse;
-  }
-
-  .floating-icon4 {
-    animation: float1 900ms infinite alternate-reverse;
-  }
-
   section {
     max-width: 600px;
     font-size: 14px;
   }
 
-  .icons {
-    max-width: 500px;
-    padding: 0;
-    justify-content: space-around;
+  .navigation a {
+    font-size: 20px;
   }
 
-  .icons img {
-    margin-top: 10px;
-    margin-bottom: 20px;
-    width: 65px;
+  #welcome,
+  #projects,
+  #tools,
+  #socials,
+  #contact {
+    height: 100vh;
   }
+
+  #welcome h1,
+  #projects h1,
+  #tools h1,
+  #socials h1,
+  #contact h1,
+  #tutoring h1 {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+
+  #tools h3,
+  #contact h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+
+  /* ---------------- Welcome Section Specific for 1000px ----------------------- */
+
+  #welcome img {
+    max-width: 500px;
+  }
+
+  #welcome p {
+    font-size: 15px;
+    padding: 10px 30px;
+  }
+
+  /* ---------------- Project Section Specific for 1000px ----------------------- */
 
   .project-box {
     width: 220px;
@@ -596,62 +620,54 @@ form {
     margin-bottom: 10px;
   }
 
-  #welcome,
-  #projects,
-  #tools,
-  #socials,
-  #contact {
-    height: 100vh;
-  }
+  /* ---------------- Tools Section Specific for 1000px ----------------------- */
 
-  #welcome img {
-    max-width: 500px;
-  }
-
-  #welcome p {
-    font-size: 15px;
-    padding: 10px 30px;
-  }
-
-  #welcome h1,
-  #projects h1,
-  #tools h1,
-  #socials h1,
-  #contact h1,
-  #tutoring h1 {
-    font-size: 28px;
-    margin-bottom: 15px;
-  }
-  
-  #tools h3,
-  #contact h3 {
-    margin-top: 0;
-    margin-bottom: 15px;
-  }
-
-  .contact-main,
-  .social-box,
   .icons {
-    margin-bottom: 10px;
+    max-width: 500px;
+    padding: 0;
+    justify-content: space-around;
   }
+
+  .icons img {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 65px;
+  }
+
+  /* ---------------- Socials Section Specific for 1000px ----------------------- */
 
   .social-box {
     padding-top: 15px;
   }
 
-  .contact-form {
-    padding: 30px;
+  .floating-icon1 img,
+  .floating-icon2 img,
+  .floating-icon3 img,
+  .floating-icon4 img {
+    max-width: 100px;
   }
 
-  .astronaut,
-  .alien,
-  .sidebar {
-    display: none;
-  }
-
-  .navigation a {
+  .floating-icons p {
     font-size: 20px;
   }
+
+  .floating-icon1 {
+    animation: smallFloat 1400ms infinite alternate-reverse;
+  }
+
+  .floating-icon2 {
+    animation: smallFloat 1200ms infinite alternate-reverse;
+  }
+
+  .floating-icon3 {
+    animation: smallFloat 1000ms infinite alternate-reverse;
+  }
+
+  .floating-icon4 {
+    animation: smallFloat 900ms infinite alternate-reverse;
+  }
+
+  /* ---------------- Tutoring Section Specific for 1000px ----------------------- */
 
   #tutoring h2 {
     font-size: 20px;
@@ -669,7 +685,29 @@ form {
   .why-me {
     margin: 0;
   }
+
+  /* ---------------- Contact Section Specific for 1000px ----------------------- */
+
+  .contact-form {
+    padding: 30px;
+  }
+
+  /* ----------------- Screen Size Specific Mods ------------------------------ */
+
+  .contact-main,
+  .social-box,
+  .icons {
+    margin-bottom: 10px;
+  }
+
+  .astronaut,
+  .alien,
+  .sidebar {
+    display: none;
+  }
 }
+
+/* ------------------------------- Phone Screen Size -------------------------------- */
 
 @media (max-width: 600px) {
   section {
@@ -677,17 +715,50 @@ form {
     font-size: 11px;
   }
 
-  .icons {
-    max-width: 250px;
-    padding: 0;
-    justify-content: space-around;
+  .navigation a {
+    font-size: 14px;
+    letter-spacing: 1px;
   }
 
-  .icons img {
-    margin-top: 5px;
-    margin-bottom: 10px;
-    width: 45px;
+  #welcome,
+  #projects,
+  #tools,
+  #socials,
+  #contact {
+    height: 100vh;
   }
+
+  #welcome h1,
+  #projects h1,
+  #tools h1,
+  #socials h1,
+  #contact h1,
+  #tutoring h1 {
+    font-size: 24px;
+    letter-spacing: 5px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }
+
+  #tools h3,
+  #contact h3 {
+    font-size: 12px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }
+
+  /* ---------------- Welcome Section Specific for 600px ----------------------- */
+
+  #welcome img {
+    max-width: 400px;
+  }
+
+  #welcome p {
+    font-size: 11px;
+    padding: 10px 40px;
+  }
+
+  /* ---------------- Project Section Specific for 600px ----------------------- */
 
   .project-box {
     width: 180px;
@@ -717,53 +788,21 @@ form {
     margin-bottom: 10px;
   }
 
-  #welcome,
-  #projects,
-  #tools,
-  #socials,
-  #contact {
-    height: 100vh;
-  }
+  /* ---------------- Tools Section Specific for 600px ----------------------- */
 
-  #welcome img {
-    max-width: 400px;
-  }
-
-  #welcome p {
-    font-size: 11px;
-    padding: 10px 40px;
-  }
-
-  #welcome h1,
-  #projects h1,
-  #tools h1,
-  #socials h1,
-  #contact h1,
-  #tutoring h1 {
-    font-size: 24px;
-    letter-spacing: 5px;
-    margin-left: 10px;
-    margin-bottom: 10px;
-  }
-
-  #tools h3,
-  #contact h3 {
-    font-size: 12px;
-    margin-left: 10px;
-    margin-bottom: 10px;
-  }
-
-  .contact-main,
-  .social-box,
   .icons {
-    margin-bottom: 10px;
+    max-width: 250px;
+    padding: 0;
+    justify-content: space-around;
   }
 
-  .astronaut,
-  .alien,
-  .sidebar {
-    display: none;
+  .icons img {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    width: 45px;
   }
+
+  /* ---------------- Socials Section Specific for 600px ----------------------- */
 
   .floating-icon1 img,
   .floating-icon2 img,
@@ -777,35 +816,22 @@ form {
   }
 
   .floating-icon1 {
-    animation: float1 1400ms infinite alternate-reverse;
+    animation: smallFloat 1400ms infinite alternate-reverse;
   }
 
   .floating-icon2 {
-    animation: float1 1200ms infinite alternate-reverse;
+    animation: smallFloat 1200ms infinite alternate-reverse;
   }
 
   .floating-icon3 {
-    animation: float1 1000ms infinite alternate-reverse;
+    animation: smallFloat 1000ms infinite alternate-reverse;
   }
 
   .floating-icon4 {
-    animation: float1 900ms infinite alternate-reverse;
+    animation: smallFloat 900ms infinite alternate-reverse;
   }
 
-  .contact-form {
-    width: fit-content;
-  }
-
-  #contact input,
-  #contact textarea,
-  #contact button {
-    font-size: 15px;
-  }
-
-  .navigation a {
-    font-size: 14px;
-    letter-spacing: 1px;
-  }
+  /* ---------------- Tutoring Section Specific for 600px ----------------------- */
 
   #tutoring .navigation a {
     font-size: 14px;
@@ -828,9 +854,37 @@ form {
   .why-me {
     margin: 0;
   }
+
+  /* ---------------- Contact Section Specific for 600px ----------------------- */
+
+  .contact-form {
+    width: fit-content;
+  }
+
+  #contact input,
+  #contact textarea,
+  #contact button {
+    font-size: 15px;
+  }
+
+  /* ---------------- Screen Size Specific Mods ----------------------- */
+
+  .contact-main,
+  .social-box,
+  .icons {
+    margin-bottom: 10px;
+  }
+
+  .astronaut,
+  .alien,
+  .sidebar {
+    display: none;
+  }
 }
 
-@keyframes float {
+/* ---------------- Animations for Socials Section --------------------- */
+
+@keyframes bigFloat {
   0% {
     transform: translateY(20px);
   }
@@ -839,7 +893,7 @@ form {
   }
 }
 
-@keyframes float1 {
+@keyframes smallFloat {
   0% {
     transform: translateY(10px);
   }
