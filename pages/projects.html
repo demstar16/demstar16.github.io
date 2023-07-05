@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>projects</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Roboto:wght@300;400;500;700&family=Rubik+Bubbles&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../src/style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="links">
+        <a href="../index.html">Home</a>
+        <a href="./projects.html" class="active">Projects</a>
+        <a href="./skills.html">Skills</a>
+        <a href="./experience.html">Experience</a>
+      </div>
+      <div class="quote">
+        <p id="quote">
+          "You can't force a flower to grow, but you can water it every day"
+        </p>
+        <button onclick="quoteReveal('quote')">:)</button>
+      </div>
+    </nav>
+    <div class="carousel">
+      <div class="carousel-item carousel-item-selected">
+        <div class="view-demo" id="ridgefield-demo">
+          <p>No Demo Available for this project</p>
+          <a class="demo-button" onclick="viewDemo('ridgefield-demo')">CLOSE</a>
+        </div>
+        <h1>Ridgefield Farm Web Application</h1>
+        <img src="../images/ridgefield.png" alt="Ridgefield Farm Project" />
+        <div class="carousel-description">
+          <div class="project-buttons">
+            <a
+              href="https://github.com/demstar16/Ridgefield-Farm-Database"
+              class="project-button"
+              target="_blank"
+            >
+              <img src="../images/github.png" alt="github" />
+              <p>Source Code</p>
+            </a>
+            <a
+              class="project-button"
+              target="_blank"
+              onclick="viewDemo('ridgefield-demo')"
+            >
+              <img src="../images/live.png" alt="live icon" />
+              <p>View Demo</p>
+            </a>
+          </div>
+          <p class="project-description">
+            This was a group University project where we developed a web
+            application with Ridgefield Farm UWA as our client. We worked in an
+            agile environment completing sprints (3 sprints total). We chose to
+            develop the web application using Django, HTML, CSS, and we deployed
+            it on Heroku. However we turned the code over to our client and
+            hence the project isn't live anymore.
+          </p>
+          <div class="project-icons">
+            <img src="../images/html.png" alt="html" />
+            <img src="../images/css.png" alt="css" />
+            <img src="../images/js.svg" alt="javascript" />
+            <img src="../images/python.png" alt="python" />
+            <img src="../images/django.png" alt="django" />
+            <img src="../images/heroku.png" alt="heroku" />
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="view-demo" id="triumph-demo">
+          <video width="500" height="300" controls>
+            <source src="../videos/triumph.mp4" type="video/mp4" />
+          </video>
+          <a class="demo-button" onclick="viewDemo('triumph-demo')">CLOSE</a>
+        </div>
+        <h1>Triumph</h1>
+        <img src="../images/triumph.png" alt="Triumph" />
+        <div class="carousel-description">
+          <div class="project-buttons">
+            <a
+              href="https://github.com/demstar16/Triumph"
+              class="project-button"
+              target="_blank"
+            >
+              <img src="../images/github.png" alt="github" />
+              <p>Source Code</p>
+            </a>
+            <a
+              class="project-button"
+              target="_blank"
+              onclick="viewDemo('triumph-demo')"
+            >
+              <img src="../images/live.png" alt="live icon" />
+              <p>View Demo</p>
+            </a>
+          </div>
+          <p class="project-description">
+            This was a group University project where we developed a political
+            terminal wargame. It was developed in Python using the numpy,
+            matplotx and networkx libraries. We used a Bayesian Equation in
+            order to help the bot player try and make more intelligent
+            decisions. This was done for the Artificial Intelligence unit.
+          </p>
+          <div class="project-icons">
+            <img src="../images/python.png" alt="python" />
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="view-demo" id="examgpt-demo">
+          <video width="500" height="300" controls>
+            <source src="../videos/examgpt.mp4" type="video/mp4" />
+          </video>
+          <a class="demo-button" onclick="viewDemo('examgpt-demo')">CLOSE</a>
+        </div>
+        <h1>Triumph</h1>
+        <img src="../images/examgpt.png" alt="ExamGPT" />
+        <div class="carousel-description">
+          <div class="project-buttons">
+            <a
+              class="project-button"
+              target="_blank"
+              onclick="viewDemo('examgpt-demo')"
+            >
+              <img src="../images/live.png" alt="live icon" />
+              <p>View Demo</p>
+            </a>
+          </div>
+          <p class="project-description">
+            This was a group University project where we developed a flask
+            application using openai, HTML, CSS, JavaScript, and Python. I am
+            still working on deployment, I do have a video to show how it works.
+            Unfortunately I can't share source code due to their being an API
+            key that I don't want to share.
+          </p>
+          <div class="project-icons">
+            <img src="../images/python.png" alt="python" />
+            <img src="../images/html.png" alt="html" />
+            <img src="../images/css.png" alt="css" />
+            <img src="../images/js.png" alt="js" />
+            <img src="../images/flask.png" alt="flask" />
+            <img src="../images/openai.png" alt="openai" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../dist/main.js"></script>
+    <footer>
+      <h4 class="created">
+        Created With
+        <img src="../images/html.png" alt="html" />
+        <img src="../images/css.png" alt="css" />
+        <img src="../images/ts.png" alt="typescript" />
+        <img src="../images/nodejs.png" alt="node.js" />
+        By Yours Truly
+      </h4>
+      <h4>dsons</h4>
+    </footer>
+  </body>
+</html>
