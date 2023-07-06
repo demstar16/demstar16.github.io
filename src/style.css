@@ -254,8 +254,13 @@ h2 {
   color: black;
 }
 
+.skill-images {
+  flex-wrap: wrap;
+}
+
 .skill-images img {
   max-width: 90px;
+  max-height: 70px;
   margin-left: 20px;
 }
 
