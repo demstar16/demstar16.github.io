@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>skills</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Roboto:wght@300;400;500;700&family=Rubik+Bubbles&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../src/style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="links">
+        <a href="../index.html">Home</a>
+        <a href="./projects.html">Projects</a>
+        <a href="./skills.html" class="active">Skills</a>
+        <a href="./experience.html">Experience</a>
+      </div>
+      <div class="quote">
+        <p id="quote"></p>
+        <button onclick="quoteGenerator()">click for a quote :)</button>
+      </div>
+    </nav>
+    <div class="skill-container">
+        <div id="languages" onclick="iconReveal('languages')">
+            <p class="skill-header">Languages</p>
+        </div>
+        <div id="frameworks" onclick="iconReveal('frameworks')">
+            <p class="skill-header">Frameworks</p>
+        </div>
+        <div id="software" onclick="iconReveal('software')">
+            <p class="skill-header">Software</p>
+        </div>
+        <div id="os" onclick="iconReveal('os')">
+            <p class="skill-header">Operating Systems</p>
+        </div>
+    </div>
+  </body>
+  <script src="../dist/main.js"></script>
+</html>
