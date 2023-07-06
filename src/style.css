@@ -254,6 +254,11 @@ h2 {
   color: black;
 }
 
+.skill-images img {
+  max-width: 90px;
+  margin-left: 20px;
+}
+
 footer {
   display: flex;
   flex-direction: column;
