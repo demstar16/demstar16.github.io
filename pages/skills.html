@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>skills</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Roboto:wght@300;400;500;700&family=Rubik+Bubbles&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../src/style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="links">
+        <a href="../index.html">Home</a>
+        <a href="./projects.html">Projects</a>
+        <a href="./skills.html" class="active">Skills</a>
+        <a href="./experience.html">Experience</a>
+      </div>
+      <div class="quote">
+        <p id="quote"></p>
+        <button onclick="quoteGenerator()">click for a quote :)</button>
+      </div>
+    </nav>
+    <div class="skill-container">
+      <h1 style="text-align: center;">Click Below Headers to See what I have Experience with :)</h1>
+      <div>
+        <p onclick="iconReveal('languages')" class="skill-header">Languages</p>
+        <div class="skill-images" id="languages" style="display: none;">
+          <img src="../images/python.png" title="Python" />
+          <img src="../images/html.png" title="HTML" />
+          <img src="../images/css.png" title="CSS" />
+          <img src="../images/js.png" title="JavaScript" />
+          <img src="../images/ts.png" title="TypeScript" />
+          <img src="../images/c.png" title="C" />
+          <img src="../images/java.png" title="Java" />
+          <img src="../images/rust.png" title="Rust" />
+          <img src="../images/git.png" title="Git" />
+          <img src="../images/sql.png" alt="SQL">
+        </div>
+      </div>
+      <div>
+        <p onclick="iconReveal('frameworks')" class="skill-header">Frameworks</p>
+        <div class="skill-images" id="frameworks" style="display: none;">
+          <img src="../images/django.png" title="Django" />
+          <img src="../images/flask.png" title="Flask" />
+          <img src="../images/nodejs.png" title="NodeJS" />
+          <img src="../images/electronjs.png" title="Electron JS" />
+        </div>
+      </div>
+      <div>
+        <p onclick="iconReveal('software')" class="skill-header">Software</p>
+        <div class="skill-images" id="software" style="display: none;">
+          <img src="../images/myob.png" title="MYOB" style="height: 75px;"/>
+          <img src="../images/excel.png" title="Microsoft Excel" />
+          <img src="../images/githubdesktop.png" title="GitHub Desktop" />
+          <img src="../images/docker.png" title="Docker" />
+        </div>
+      </div>
+      <div>
+        <p onclick="iconReveal('os')" class="skill-header">Operating Systems</p>
+        <div class="skill-images" id="os" style="display: none;">
+          <img src="../images/windows.png" title="Windows" />
+          <img src="../images/mac.png" title="Macintosh" />
+          <img src="../images/linux.png" title="Linux" />
+        </div>
+      </div>
+    </div>
+    <footer>
+      <h4 class="created">
+        Created With
+        <img src="../images/html.png" alt="html" />
+        <img src="../images/css.png" alt="css" />
+        <img src="../images/ts.png" alt="typescript" />
+        <img src="../images/nodejs.png" alt="node.js" />
+        By Yours Truly
+      </h4>
+      <h4>dsons</h4>
+    </footer>
+    <script src="../dist/main.js"></script>
+  </body>
+</html>
