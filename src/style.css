@@ -47,7 +47,7 @@ h2 {
 }
 
 .links a:hover {
-  color: black;
+  color: rgb(0, 174, 255);
 }
 
 .quote {
@@ -264,11 +264,43 @@ h2 {
   margin-left: 20px;
 }
 
+.experience-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.experience-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 700px;
+  margin: 50px 0 0 0;
+  padding-bottom: 20px;
+  border-bottom: 2px solid var(--primary);
+}
+
+.experience-box h1,
+.experience-box p {
+  text-align: center;
+}
+
+.experience-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.experience-title img {
+  align-self: center;
+  width: 200px;
+}
+
 footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 200px;
+  margin-top: 100px;
   /* background-color: var(--brown); */
 }
 
@@ -290,5 +322,5 @@ footer h4 img {
 }
 
 .links .active {
-  color: var(--secondary);
+  color: rgb(0, 140, 255);
 }
