@@ -31,10 +31,6 @@
     </nav>
     <div class="carousel">
       <div class="carousel-item carousel-item-selected">
-        <div class="view-demo" id="ridgefield-demo">
-          <p>No Demo Available for this project</p>
-          <a class="demo-button" onclick="viewDemo('ridgefield-demo')">CLOSE</a>
-        </div>
         <h1>Ridgefield Farm Web Application</h1>
         <img src="../images/ridgefield.png" alt="Ridgefield Farm Project" />
         <div class="carousel-description">
@@ -47,19 +43,11 @@
               <img src="../images/github.png" alt="github" />
               <p>Source Code</p>
             </a>
-            <a
-              class="project-button"
-              target="_blank"
-              onclick="viewDemo('ridgefield-demo')"
-            >
-              <img src="../images/live.png" alt="live icon" />
-              <p>View Demo</p>
-            </a>
           </div>
           <p class="project-description">
             This was a group University project where we developed a web
             application with Ridgefield Farm UWA as our client. We worked in an
-            agile environment completing sprints (3 sprints total). We chose to
+            agile environment completing 3 sprints. We chose to
             develop the web application using Django, HTML, CSS, and we deployed
             it on Heroku. However we turned the code over to our client and
             hence the project isn't live anymore.
@@ -75,7 +63,7 @@
         </div>
       </div>
       <div class="carousel-item">
-        <div class="view-demo" id="triumph-demo">
+        <div class="view-demo" id="triumph-demo" style="display: none;">
           <video width="500" height="300" controls>
             <source src="../videos/triumph.mp4" type="video/mp4" />
           </video>
@@ -115,7 +103,7 @@
         </div>
       </div>
       <div class="carousel-item">
-        <div class="view-demo" id="examgpt-demo">
+        <div class="view-demo" id="examgpt-demo" style="display: none;">
           <video width="500" height="300" controls>
             <source src="../videos/examgpt.mp4" type="video/mp4" />
           </video>
@@ -136,8 +124,7 @@
           </div>
           <p class="project-description">
             This was a group University project where we developed a flask
-            application using openai, HTML, CSS, JavaScript, and Python. I am
-            still working on deployment, I do have a video to show how it works.
+            application using openai, HTML, CSS, JavaScript, and Python. I have a video to show how it works.
             Unfortunately I can't share source code due to their being an API
             key that I don't want to share.
           </p>
@@ -151,6 +138,57 @@
           </div>
         </div>
       </div>
+      <div class="carousel-item">
+        <h1>rake</h1>
+        <img src="../images/rake.png" alt="rake" />
+        <div class="carousel-description">
+          <div class="project-buttons">
+            <a
+              href="https://github.com/pavo-etc/rake"
+              class="project-button"
+              target="_blank"
+            >
+              <img src="../images/github.png" alt="github" />
+              <p>Source Code</p>
+            </a>
+          </div>
+          <p class="project-description">
+            This was a partner university project where we created client 
+            and server applications for rake, a protocol for distributed 
+            compilation and remote command execution.
+          </p>
+          <div class="project-icons">
+            <img src="../images/python.png" alt="python" />
+            <img src="../images/c.png" alt="C" />
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <h1>duplicates</h1>
+        <img src="../images/duplicates.png" alt="duplicates" />
+        <div class="carousel-description">
+          <div class="project-buttons">
+            <a
+              href="https://github.com/demstar16/CLI-duplicates"
+              class="project-button"
+              target="_blank"
+            >
+              <img src="../images/github.png" alt="github" />
+              <p>Source Code</p>
+            </a>
+          </div>
+          <p class="project-description">
+            duplicates is a command line utility to 
+            locate and report duplicate files in a named 
+            directory based on SHA2 hashes. I completed this 
+            project with my project partner for the Systems 
+            Programming unit with Chris McDonald.
+          </p>
+          <div class="project-icons">
+            <img src="../images/c.png" alt="C" />
+          </div>
+        </div>
+      </div>    
     </div>
     <script src="../dist/main.js"></script>
     <footer>
