@@ -9,7 +9,7 @@ let icons = [
     ['HTML', '../images/html.png'],
     ['CSS', '../images/css.png'],
     ['TypeScript', '../images/ts.png'],
-    ['JavaScript', '../images/js.png'],
+    ['JavaScript', '../images/js.svg'],
     ['Git', '../images/git.png'],
     ['SQL', '../images/sql.png'],
     ['Digital Ocean', '../images/digitalocean.png'],
