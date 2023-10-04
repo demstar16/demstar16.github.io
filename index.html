@@ -1,47 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>home</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Roboto:wght@300;400;500;700&family=Rubik+Bubbles&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="src/style.css" />
-  </head>
-  <body>
+    <link rel="stylesheet" href="style/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
     <nav>
-      <div class="links">
-        <a href="./index.html" class="active">Home</a>
-        <a href="./pages/projects.html">Projects</a>
-        <a href="./pages/skills.html">Skills</a>
-        <a href="./pages/experience.html">Experience</a>
-      </div>
-      <div class="quote">
-        <p id="quote"></p>
-        <button onclick="quoteGenerator()">click for a quote :)</button>
-      </div>
-    </nav>
-    <div class="homepage">
-      <h1>Hello and Welcome</h1>
-      <h2>My Name is Dempsey Thompson</h2>
-      <div class="home-container">
-        <div class="text">
-          <p>
-            I am a 21 year old passionate developer who has just graduated from
-            the University of WA with a Bachelor of Science majoring in Computer
-            Science and Software Engineering. I have a strong interest in
-            developing full stack web applications and unity game development.
-            In my spare time I like to play rugby. I am currently seeking full
-            time employment and open to work anywhere where I can develop my
-            skills further in a good working environment, whilst providiing as
-            much value as I can.
-          </p>
-          <p>dcthompson02@gmail.com</p>
-          <div class="icons">
+        <div class="page-links">
+            <a href="/" class="active">Dempsey Thompson</a>
+            <a href="templates/projects.html">Projects</a>
+            <a href="templates/skills.html">Skills</a>
+            <a href="templates/experience.html">Experience</a>
+        </div>
+        <div class="icons">
             <a href="https://github.com/demstar16" target="_blank"
             ><img src="./images/github.png" alt="GitHub"
             /></a>
@@ -50,24 +28,36 @@
             target="_blank"
             ><img src="./images/linkedin.png" alt="LinkedIn"
             /></a>
-          </div>
+            <a
+            href="https://leetcode.com/demstar16/"
+            target="_blank"
+            ><img src="./images/leetcode.png" alt="Leetcode"
+            /></a>
         </div>
-        <div class="image">
-          <img src="./images/portrait.png" alt="me" />
+    </nav>
+    <div class="sidebar-offset">
+        <div class="profile">
+            <img src="images/portrait.jpg">
+            <div class="profile-description">
+              <h1>Hello :), I am Dempsey...</h1>
+              <p> 
+                Welcome to my site! I am a 21 year old passionate developer 
+                and recent graduate from UWA, currently seeking full-time employment.
+                I love learning about new technologies and diving into new
+                projects. I am currently getting my hands dirty with game 
+                development using LOVE2D and eventually progressing into Unity.
+                I also share an interest with machine learning and cybersecurity.
+              </p>
+              <p>
+                Outside of the office I like to play Rugby Union, keep fit, go to the beach
+                and try my best to catch up in One Piece.
+              </p>
+              <p>
+                <b>For anything business related feel free to reach out on:</b><br>
+                dcthompson02@gmail.com
+              </p>
+            </div>
         </div>
-      </div>
     </div>
-    <script src="dist/main.js"></script>
-    <footer>
-      <h4 class="created">
-        Created With 
-        <img src="./images/html.png" alt="html" />
-        <img src="./images/css.png" alt="css" />
-        <img src="./images/ts.png" alt="typescript" />
-        <img src="./images/nodejs.png" alt="node.js" />
-        By Yours Truly
-      </h4>
-      <h4>dsons</h4>
-    </footer>
-  </body>
+</body>
 </html>

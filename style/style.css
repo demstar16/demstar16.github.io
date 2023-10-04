@@ -1,0 +1,199 @@
+:root {
+  --blue: #43a2f5;
+}
+
+html {
+  margin: 0;
+}
+
+body {
+  margin: 0 auto;
+  color: black;
+  font-family: 'Dosis', sans-serif;
+  overflow-x: hidden;
+}
+
+nav {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 300px;
+  height: 100%;
+  padding-right: 20px;
+  border-right: 4px solid rgb(0, 0, 0, 0.1) ;
+}
+
+a {
+  text-decoration: none;
+}
+
+.page-links {
+  display: flex;
+  flex-direction: column;
+}
+
+nav a {
+  margin-top: 20px;
+  margin-left: 20px;
+  color: black;
+  font-size: 25px;
+  width: fit-content;
+}
+
+nav a:hover {
+  color: var(--blue);
+  transition: color 0.3s;
+}
+
+.active {
+  color: var(--blue);
+}
+
+.sidebar-offset {
+  margin-left: 240px;
+}
+
+.icons {
+  display: flex;
+  align-items: start;
+  padding: 3px;
+  margin-bottom: 30px;
+}
+
+.icons img {
+  max-width: 40px;
+}
+
+.icons img:hover {
+  opacity: 30%;
+  transition: opacity 0.3s;
+}
+
+.profile {
+  display: flex;
+  padding-left: 40px ;
+  font-size: 20px;
+  margin-right: 40px;
+}
+
+.profile img {
+  max-width: 500px;
+  margin: 50px 0 0 0;
+  border: 3px solid black;
+}
+
+.profile-description {
+  margin-top: 30px;
+  padding-left: 20px;
+}
+
+#projects {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project-box {
+  max-width: 350px;
+  margin: 15px 0 15px 10px;
+  border: 1px solid rgb(0, 0, 0, 0);
+  border-radius: 10px;
+  padding: 3px 7px;
+}
+
+.project-box img {
+  max-width: 300px;
+}
+
+.project-box h1 {
+  font-size: 20px;
+}
+
+#projects a {
+  text-decoration: none;
+  color: black;
+  width: fit-content;
+  height: fit-content;
+}
+
+
+.project-box:hover {
+  border: 1px solid var(--blue);
+  transition: border 0.1s;
+
+}
+
+.moving-icons {
+  width: 100%;
+  overflow-x: scroll;
+  white-space: nowrap;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.moving-icons img {
+  margin-top: 50px;
+  max-width: 100px;
+  margin-left: 20px;
+}
+
+.skill-container {
+  padding-left: 30px;
+}
+
+.skill-container p {
+  font-size: 25px ;
+}
+
+.skill {
+  display: flex;
+  margin-top: 20px;
+}
+
+.skill img {
+  max-width: 90px;
+  margin-right: 40px;
+}
+
+.skill p {
+  font-size: 20px;
+}
+
+.skill a {
+  color: var(--blue);
+}
+
+.skill a:hover {
+  opacity: 0.4;
+}
+
+#experience {
+  padding: 40px;
+}
+
+#experience h1 {
+  font-size: 35px;
+  margin: 0;
+}
+
+#experience h3,
+.experience-tech {
+  font-size: 18px;
+  margin: 0;
+  font-family: monospace;
+}
+
+#experience p {
+  font-size: 20px;
+}
+
+.experience-box {
+  padding-bottom: 50px;
+  padding-top: 10px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.experience-box img {
+  max-width: 250px;
+}
