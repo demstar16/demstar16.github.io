@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
     let projectData = [
         [
             'Cleaning Equipment WA', 
-            '../images/cewa-no-slogan.png', 
+            '../images/cewa-logo.png', 
             'A web application written in Django and deployed on Digital Ocean developed by myself for my family business, Cleaning Equipment WA.', 
             'https://cewa.d-sons.com/'
         ],
@@ -39,19 +39,19 @@ document.addEventListener("DOMContentLoaded", function() {
         ],
         [
             'Flappy Bird Clone', 
-            '../images/flappy-bird.png', 
+            '../images/flappy-bird1.png', 
             'A Flappy Bird clone created in the Harvard CS50 gaming course written in Lua. I did not create all the code but rather added features, these included: pause functionality, rewards depending on score, and randomizing distance between pipe pairs and gap distance.',
             'https://github.com/demstar16/flappy-bird-clone'
         ],
         [
             'Triumph', 
-            '../images/triumph.png', 
+            '../images/triumph1.png', 
             'A terminal political war game developed with Python using the numpy, networkx and matplotx libraries. Bayesian equations are integrated in to make the AI aspects of the game make better decisions.',
             'https://github.com/demstar16/triumph'
         ],
         [
             'ExamGPT', 
-            '../images/examgpt.png', 
+            '../images/examgpt1.png', 
             'A web application designed to assist students and/or teachers with creating questions and answers for those questions. Built by a small team using Flask, HTML, CSS, JavaScript, and openAI.',
             '/'
         ],
