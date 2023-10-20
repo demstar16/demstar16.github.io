@@ -2,10 +2,16 @@ document.addEventListener("DOMContentLoaded", function() {
 
     let projectData = [
         [
-            'Cleaning Equipment WA', 
-            '../images/cewa-logo.png', 
+            'Cleaning Equipment WA Website', 
+            '../images/cewa-website.png', 
             'A web application written in Django and deployed on Digital Ocean developed by myself for my family business, Cleaning Equipment WA.', 
             'https://cewa.d-sons.com/'
+        ],
+        [
+            'Cleaning Equipment WA Comparator', 
+            '../images/cewa-comparator.png', 
+            'A desktop application created by myself in ElectronJS. It is specifically tailored towards the cleaning industry, its purpose is to provide the client with the best recommendation to suit their needs.', 
+            'https://github.com/demstar16/cewa-machine-comparator'
         ],
         [
             'Password Manager', 
@@ -53,7 +59,7 @@ document.addEventListener("DOMContentLoaded", function() {
             'ExamGPT', 
             '../images/examgpt1.png', 
             'A web application designed to assist students and/or teachers with creating questions and answers for those questions. Built by a small team using Flask, HTML, CSS, JavaScript, and openAI.',
-            '/'
+            'https://github.com/demstar16/examGPT'
         ],
     ]
     
