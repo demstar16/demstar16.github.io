@@ -91,23 +91,55 @@ nav a:hover,
 
 .profile {
   position: relative;
-  padding-top: 30px;
+  /* padding-top: 30px; */
   display: flex;
-  padding-left: 40px ;
+  /* padding-left: 40px ; */
   font-size: 20px;
-  margin-right: 40px;
+  /* margin-right: 40px; */
   z-index: 1;
 }
 
-.profile img {
-  max-width: 500px;
-  margin: 50px 0 0 0;
-  border: 3px solid black;
+.profile-description {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  /* padding-left: 20px; */
 }
 
-.profile-description {
-  margin-top: 30px;
-  padding-left: 20px;
+.profile-description img {
+  max-width:250px;
+  border-radius: 130px;
+  border: 3px solid rgb(255, 255, 255);
+  margin-right: 50px;
+}
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--blue);
+  padding: 5px 10px 5px 30px;
+}
+
+.heading-title {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  justify-content: flex-end;
+  padding-bottom: 15px;
+}
+
+.heading-title h3 {
+  font-size: 17px;
+  margin: 0;
+}
+
+.heading-title h1 {
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.about {
+  padding: 0 30px ;
 }
 
 #projects {
@@ -220,7 +252,7 @@ nav a:hover,
   max-width: 250px;
 }
 
-@media (max-width: 1200px) {
+/* @media (max-width: 1200px) {
   .profile h1 {
     font-size: 1.5em;
   }
@@ -228,7 +260,7 @@ nav a:hover,
   .profile p {
     font-size: 15px;
   }
-}
+} */
 
 @media (max-width: 1050px) {
   .profile {
@@ -236,7 +268,7 @@ nav a:hover,
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 500px) {
   nav {
     display: none;
   }
@@ -266,9 +298,35 @@ nav a:hover,
     max-width: 25px;
     margin-right: 8px;
   }
+  
+  .profile-description img {
+    max-width: 110px;
+    max-height: 110px;
+    margin: 0;
+    margin: 10px 0;
+  }
+  
+  .heading {
+    margin-top: 20px;
+    padding: 0;
+    align-items: center;
+    padding: 0 5px;
+  }
 
-  .profile img {
-    max-width: 300px;
+  .heading-title h1 {
+    font-size: 20px;
+  }
+
+  .about h1 {
+    font-size: 25px;
+  }
+
+  .heading-title h3 {
+    font-size: 15px;
+  }
+
+  .about p {
+    font-size: 17px;
   }
 
   #projects {
