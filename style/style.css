@@ -214,11 +214,13 @@ nav a:hover,
   font-size: 20px;
 }
 
-.skill a {
+.skill a,
+.about a {
   color: var(--blue);
 }
 
-.skill a:hover {
+.skill a:hover,
+.about a:hover {
   opacity: 0.4;
 }
 
