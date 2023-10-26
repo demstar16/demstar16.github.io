@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function() {
             'Adam Sandler Wordle', 
             '../images/adam-sandler-wordle.png',
             'An Adam Sandler inspired wordle like game created with Flask. One of my favorite projects to date and I learnt a lot making it.',
-            'https://github.com/demstar16/adam-sandler-audio-wordle'
+            'https://adamsandlerwordle.d-sons.com/'
         ],
         [
             'Duplicates CLI', 
