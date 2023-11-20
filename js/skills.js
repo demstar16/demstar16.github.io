@@ -6,6 +6,7 @@ let icons = [
     ['C', '../images/c.png'],
     ['Rust', '../images/rust.png'],
     ['Lua', '../images/lua.svg'],
+    ['React', '../images/react.png'],
     ['HTML', '../images/html.png'],
     ['CSS', '../images/css.png'],
     ['TypeScript', '../images/ts.png'],

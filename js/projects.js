@@ -22,8 +22,8 @@ document.addEventListener("DOMContentLoaded", function() {
         [
             'Get It Done',
             '../images/get-it-done.png',
-            'A basic to do list created with React, still a work in progress with basic functionality completed.',
-            'https://github.com/demstar16/get-it-done'
+            'A fully functional to do list created with React, utilising local storage to save your tasks upon refreshing the page.',
+            'https://get-it-done.d-sons.com'
         ],
         [
             'Adam Sandler Wordle',
