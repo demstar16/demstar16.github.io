@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
             'Cleaning Equipment WA Website',
             '../images/cewa-website.png',
             'A web application written in Django and deployed on Digital Ocean developed by myself for my family business, Cleaning Equipment WA.',
-            'https://cleaningequipmentwa.com.au/'
+            'https://www.cleaningequipmentwa.com.au/'
         ],
         [
             'Cleaning Equipment WA Comparator',
